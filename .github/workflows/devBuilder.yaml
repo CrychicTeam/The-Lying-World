@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.BUILD }}-${{ env.VERSION }}.${{ github.run_number }}
-          path: .artifacts
+          path: artifacts
