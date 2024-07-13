@@ -6,7 +6,7 @@
 mkdir artifacts
 for dir in $(ls /)
     do
-        [ -d $dir ] && mv $dir artifacts/overrides
+        mv $dir artifacts/overrides
     done 
 mv manifest.json artifacts
 mv modlist.html artifacts
