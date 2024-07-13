@@ -2,10 +2,10 @@ name: dev build
 on:
   push:
     branches:
-      - The-Lying-World/main
+      - main
   pull_request:
     branches:
-      - The-Lying-World/main
+      - main
 
 env:
   BUILD: The Lying World
