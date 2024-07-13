@@ -1,0 +1,20 @@
+
+[celesteconfig]
+
+	[celesteconfig.moon]
+		#Celestial Configuration
+		#Moon Width Scalar
+		#Range: 0.0 ~ 100.0
+		width = 1.0
+		#Moon Height Scalar
+		#Range: 0.0 ~ 100.0
+		height = 1.0
+
+	[celesteconfig.sun]
+		#Sun Width Scalar
+		#Range: 0.0 ~ 100.0
+		width = 1.0
+		#Moon Height Scalar
+		#Range: 0.0 ~ 100.0
+		height = 1.0
+

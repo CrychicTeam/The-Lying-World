@@ -1,0 +1,25 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 2
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "fight_fungus": {
+    "description1": "Should Things attack mobs from Spore: Fungal Infection?",
+    "description2": "You may need to modify the config of Spore: Fungal Infection for them to fight correctly",
+    "value": false
+  },
+  "fight_sculk": {
+    "description1": "Should Things attack mobs from Sculk Horde?",
+    "description2": "You may need to modify the config of Sculk Horde for them to fight correctly",
+    "value": false
+  },
+  "xeno_allies": {
+    "description": "Gigeresque Xenomorphs do not attack Things",
+    "value": true
+  }
+}

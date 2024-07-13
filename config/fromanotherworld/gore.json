@@ -1,0 +1,24 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 2
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "enabled": {
+    "description": "Should corpses that spread gore be placed when Things are killed?",
+    "value": true
+  },
+  "wall_palmer_chance": {
+    "description": "1 in this number chance for any wall tentacle block with sufficient support to instead be a wall palmer.",
+    "value": 10
+  },
+  "tunnel_gore_time": {
+    "description1": "Minimum age of a tunnel block in ticks required for it to start spreading gore blocks.",
+    "description2": "Set to a negative value to disable.",
+    "value": 72000
+  }
+}

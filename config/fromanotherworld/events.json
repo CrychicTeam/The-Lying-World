@@ -1,0 +1,28 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 1
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "enabled": {
+    "description": "Should Thing invasion events happen?",
+    "value": true
+  },
+  "first_event_day": {
+    "description1": "The first day that an invasion event will happen.",
+    "description2": "This option treats the first day in a world as day 1, unlike the vanilla F3 screen.",
+    "value": 1
+  },
+  "min_cooldown": {
+    "description": "The minimum number of days between events.",
+    "value": 30
+  },
+  "max_cooldown": {
+    "description": "The maximum number of days between events.",
+    "value": 40
+  }
+}

@@ -1,0 +1,99 @@
+#杀敌最大有效数计算：killNumberLimitCoefficient*maxHealth*10
+#伤害计算公式：基础数值+killCount*killNumberCoefficient*maxHealth*10*killNumberAttackCoefficient+toolUseCount*useNumberCoefficient
+#挖掘速度计算公式：基础速度*(1+minedCount*minedNumberCoefficient)
+#跳跃速度计算公式：x，y，z轴的初速度为分别为 各轴基础速度*(1+jumpCount*jumpNumberCoefficient)
+#移动速度计算公式：基础数值+moveCount*moveNumberCoefficient
+#游泳速度计算公式：基础数值+swimCount*swimNumberCoefficient
+#攀爬速度计算公式：y轴的初速度为为 基础速度*(1+climbNumber*climbNumberCoefficient)
+#敲钟音量计算公式：基础数值+count*volumeCoefficient
+#敲钟音调计算公式：基础数值+count*pitchCoefficient
+#kill number limit
+#Range: 0.0 ~ 1.7976931348623157E308
+killNumberLimitCoefficient = 1000.0
+#kill number attack coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+killNumberAttackCoefficient = 0.001
+#Kill number coefficient
+#Range: 0.0 ~ 2.147483647E9
+killNumberCoefficient = 1.0E-4
+#use number limit
+#Range: > 0
+useNumberLimit = 5000
+#use number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+useNumberCoefficient = 1.0E-4
+#mined number limit
+#Range: > 0
+minedNumberLimit = 50000
+#mined number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+minedNumberCoefficient = 1.0E-4
+#mined sqrt coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+minedSqrtCoefficient = 0.5
+#jump number limit
+#Range: > 1
+jumpNumberLimit = 10000
+#jump number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+jumpNumberCoefficient = 4.14E-5
+#jump sqrt coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+jumpSqrtCoefficient = 0.5
+#move distance limit
+#Range: > 0
+moveNumberLimit = 1000000
+#move distance coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+moveNumberCoefficient = 1.0E-7
+#move sqrt coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+moveSqrtCoefficient = 0.5
+#swim distance limit
+#Range: > 0
+swimNumberLimit = 2000000
+#swim number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+swimNumberCoefficient = 1.0E-6
+#swim sqrt coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+swimSqrtCoefficient = 0.5
+#climb speed limit
+#Range: 0.0 ~ 1.7976931348623157E308
+climbSpeedLimit = 0.2
+#climb distance limit
+#Range: > 0
+climbNumberLimit = 1000000
+#climb number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+climbNumberCoefficient = 1.0E-7
+#ring number limit
+#Range: > 0
+ringNumberLimit = 10000
+#volume coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+volumeCoefficient = 0.001
+#pitch coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+pitchCoefficient = 0.001
+#Percentage damage reduction
+isPercentage = true
+#absorb number limit
+#Range: 0.0 ~ 1.7976931348623157E308
+absorbNumberLimit = 100000.0
+#absorb number coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+absorbNumberCoefficient = 0.8
+#absorb sqrt coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+absorbSqrtCoefficient = 0.5
+#forget coefficient
+#Range: 0.0 ~ 1.7976931348623157E308
+forgetCoefficient = 0.95
+#forget time
+#Range: > 1
+forgetTime = 1728000
+#use sqrt
+#使用开根号计算
+isSqrt = false
+

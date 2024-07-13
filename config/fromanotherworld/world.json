@@ -1,0 +1,16 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 1
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "alien_thing_chunk_loading": {
+    "description1": "Should the Alien Thing be able to keep chunks around it loaded?",
+    "description2": "May cause issues with other mods that load chunks.",
+    "value": true
+  }
+}
