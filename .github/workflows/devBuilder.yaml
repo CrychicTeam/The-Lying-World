@@ -1,8 +1,5 @@
 name: dev build
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -15,13 +12,13 @@ jobs:
   CreateCursePack:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Run build.sh
-        run: bash runners/build.sh
+        run: bash .github/runners/build.sh
 
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.BUILD }}-${{ env.VERSION }}.${{ github.run_number }}
-          path: artifacts
+          path: .artifacts
