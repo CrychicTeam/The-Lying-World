@@ -5,7 +5,7 @@
 
 mkdir .artifacts
 mkdir .artifacts/overrides
-for dir in $(ls)
+for dir in $(ls -d)
     do
         mv $dir .artifacts/overrides
     done 
