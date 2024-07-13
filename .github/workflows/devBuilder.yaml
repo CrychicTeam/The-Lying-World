@@ -2,10 +2,10 @@ name: dev build
 on:
   push:
     branches:
-      - The-Lying-World/main
+      - main
   pull_request:
     branches:
-      - The-Lying-World/main
+      - main
 
 env:
   BUILD: The Lying World
@@ -14,6 +14,7 @@ env:
 jobs:
   CreateCursePack:
     runs-on: ubuntu-latest
+    if: github.repository == 'MakeshitTeam/The-Lying-World '
     steps:
       - uses: actions/checkout@v4
 
