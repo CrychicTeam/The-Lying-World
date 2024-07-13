@@ -9,5 +9,5 @@ for dir in $(ls)
     do
         mv $dir .artifacts/overrides
     done 
-mv manifest.json .artifacts
-mv modlist.html .artifacts
+#mv manifest.json .artifacts
+#mv modlist.html .artifacts
