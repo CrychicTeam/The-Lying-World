@@ -5,9 +5,9 @@
 
 mkdir .artifacts
 mkdir .artifacts/overrides
-for dir in $(ls -d)
+for dir in $(ls)
     do
-        mv $dir .artifacts/overrides
+        [ -d $dir ] && mv $dir .artifacts/overrides
     done 
 #mv manifest.json .artifacts
 #mv modlist.html .artifacts
