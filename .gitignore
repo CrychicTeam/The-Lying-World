@@ -1,5 +1,7 @@
 *.*
 !*.md
+!manifest.json
+!modlist.html
 !*/
 !config/
 !config/**
