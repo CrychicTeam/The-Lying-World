@@ -4,7 +4,7 @@
 [ "${PROJECT_DIR}" != "${PWD}" ] && cd "${PROJECT_DIR}"
 
 mkdir artifacts
-for dir in $(ls -d)
+for dir in $(ls -d /)
     do
         mv $dir artifacts/overrides
     done 
