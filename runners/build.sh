@@ -7,7 +7,9 @@ mkdir artifacts
 mkdir artifacts/overrides
 for dir in $(ls)
     do
+    echo $dir
         if [-d $dir];then
+            echo $dir
             mv $dir artifacts/overrides
         fi
     done 
