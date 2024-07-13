@@ -1,0 +1,27 @@
+name: dev build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  BUILD: The Lying World
+  VERSION: ALPHA-v0.0
+
+jobs:
+  CreateCursePack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run build.sh
+        run: bash runners/build.sh
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.BUILD }}-${{ env.VERSION }}.${{ github.run_number }}
+          path: artifacts

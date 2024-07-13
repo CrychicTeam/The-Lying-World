@@ -5,6 +5,10 @@
 !*/
 !config/
 !config/**
+!.github/
+!.github/**
+!runners/
+!runners/**
 config/roughlyenoughitems
 !defaultconfigs/
 !defaultconfigs/**
