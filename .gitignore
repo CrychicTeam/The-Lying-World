@@ -1,8 +1,14 @@
 *.*
 !*.md
+!manifest.json
+!modlist.html
 !*/
 !config/
 !config/**
+!.github/
+!.github/**
+!runners/
+!runners/**
 config/roughlyenoughitems
 !defaultconfigs/
 !defaultconfigs/**
