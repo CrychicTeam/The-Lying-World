@@ -1,8 +1,11 @@
 name: dev build
 on:
+  push:
+    branches:
+      - The-Lying-World/main
   pull_request:
     branches:
-      - main
+      - The-Lying-World/main
 
 env:
   BUILD: The Lying World
