@@ -1,0 +1,39 @@
+
+["Configs for Unseen World"]
+	#--Configuration of Enchants and Effects--
+	#Determine chance of appling reducing of gravity effect on player
+	#Range: 5.0E-4 ~ 0.1
+	reducing_of_gravity_chance = 0.0035
+	#Determine chance of appling meteoritestrophy effect on player
+	#Range: 5.0E-4 ~ 0.1
+	meteoritestrophy_chance = 0.0025
+	#Determine extra power of life steeling enchantment
+	#Range: 0 ~ 5
+	extra_power_of_life_steeling = 0
+	#Determine extra power of gravity thorns enchantment
+	#Range: -1 ~ 5
+	extra_power_of_gravity_thorns = 0
+	#Determine extra power of shining blade enchantment
+	#Range: 0 ~ 5
+	extra_power_of_shining_blade = 0
+	#Determine if gravity thorns enchantment has to work
+	deactivate_spikes = false
+	#Determine if life steel enchantment has to work
+	deactivate_life_steeling = false
+	#Determine if shining blade enchantment has to work
+	deactivate_shining_blade = false
+	#Determine if mining boots enchantment has to work
+	deactivate_mining_boots = false
+	#--Configuration of Mobs--
+	#Value of Dark Warrior Maximum health
+	#Range: 50.0 ~ 1000.0
+	warrior_health = 300.0
+	#Value of Blazer Maximum health
+	#Range: 50.0 ~ 1000.0
+	blazer_health = 450.0
+	#Value of Wither Knight Maximum health
+	#Range: 50.0 ~ 1000.0
+	knight_health = 350.0
+	#Enable panorama of Unseen World.
+	panorama_unseen_world = false
+

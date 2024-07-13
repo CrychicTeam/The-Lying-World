@@ -1,0 +1,904 @@
+
+[Compatibilities]
+	#Default false
+	"Should there be a compatibility with FAW?" = false
+	#Default false
+	"Should there be a compatibility with Sculk Infection?" = false
+
+["Griefing Parameters"]
+	"The block breaking hardness of calamities" = 5
+	"The block breaking hardness of hyper evolved" = 3
+	"The block breaking hardness of experiments" = 1
+
+["Global Variables"]
+	"The amount of needed Hiveminds for the world to change" = 3
+	"Global Damage Modifier" = 1.0
+	"Global Health Modifier" = 1.0
+	"Global Armor Modifier" = 1.0
+	#Default true
+	"Should the infected be weak to cold?" = true
+	#Default true
+	"Should the infected starve overtime?" = true
+	#Default true
+	"Should certain mobs wear costumes on occasions?" = true
+	#Default true
+	"Should some infected have higher thinking such as opening doors or trying to break certain blocks?" = true
+	"Hunger in seconds" = 300
+
+[TargetingTasks]
+	#Default true
+	"Should attack other mobs?" = true
+	#Default false
+	"Should attack Animals?" = false
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
+	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
+	"Mobs that will target infected" = ["minecraft:iron_golem", "guardvillagers:guard", "roamers:roamer"]
+	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
+
+["MobRoles ,decides some of the interactions between the infected mobs"]
+	Basic_Infected = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:inf_witch", "spore:inf_pillager", "spore:inf_player"]
+	Evolved_Infected = ["spore:braiomil", "spore:knight", "spore:griefer", "spore:busser", "spore:spitter", "spore:leaper", "spore:slasher", "spore:howler", "spore:stalker", "spore:brute", "spore:inf_evoker", "spore:inf_vindicator"]
+	Support = ["spore:inf_witch", "spore:braiomil", "spore:howler", "spore:busser"]
+	Disposable = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:slasher", "spore:volatile", "spore:inf_vindicator", "minecraft:creeper"]
+	Ranged = ["spore:spitter", "spore:inf_pillager", "spore:braiomil", "spore:inf_evoker"]
+
+["Mob Evolutions and Infection System"]
+
+	["Mob Evolutions and Infection System".Evolutions]
+		"Infected Human Evolutions" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:busser"]
+		"Infected Villager Evolutions" = ["spore:slasher", "spore:leaper", "spore:spitter"]
+		"Infected Pillager Evolutions" = ["spore:howler", "spore:stalker", "spore:brute"]
+		"Infected Witch Evolutions" = ["spore:volatile"]
+		"Mobs that won't despawn after being created from assimilation" = ["spore:inf_villager", "spore:inf_pillager", "spore:inf_witch"]
+		#Default true
+		"Should mobs with no kills starve?" = true
+		#Default 300
+		"Evolution Timer in seconds" = 300
+		#Default 1
+		"Minimum amount of kills to start the evolution" = 1
+		#Default 5
+		"Minimum amount of kills to start the hyper evolution" = 5
+
+	["Mob Evolutions and Infection System".Infections]
+		#Default true
+		"Should the player be infected on death?" = true
+		"Mobs and their infected counterparts" = ["minecraft:zombie|spore:inf_human", "minecraft:husk|spore:inf_husk", "minecraft:drowned|spore:inf_drowned", "minecraft:pillager|spore:inf_pillager", "minecraft:villager|spore:inf_villager", "guardvillagers:guard|spore:inf_villager", "recruits:recruit|spore:inf_villager", "recruits:bowman|spore:inf_villager", "recruits:recruit_shieldman|spore:inf_villager", "recruits:nomad|spore:inf_villager", "recruits:horseman|spore:inf_villager", "minecraft:witch|spore:inf_witch", "minecraft:wandering_trader|spore:inf_wanderer", "minecraft:evoker|spore:inf_evoker", "minecraft:vindicator|spore:inf_vindicator", "hunterillager:hunterillager|spore:inf_vindicator", "roamers:roamer|spore:inf_player", "roamers:bandit|spore:inf_player"]
+
+[Effects]
+	"Mobs that are immune to the mycelium infection" = ["minecraft:ghast", "minecraft:iron_golem", "minecraft:magma_cube", "minecraft:mooshroom", "minecraft:phantom", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:wither", "minecraft:skeleton"]
+	"Mobs that are damaged by corrosion" = ["minecraft:iron_golem"]
+
+[Mobs]
+
+	[Mobs."Infected Evoker"]
+		#Default 35
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Evoker Max health" = 35.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Evoker Damage" = 7.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Evoker Armor" = 4.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Claw Max health" = 15.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Claw Damage" = 7.0
+		#Default 3
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Claw Armor" = 3.0
+
+	[Mobs."Infected Vindicator"]
+		#Default 28
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Vindicator Max health" = 28.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Vindicator Damage" = 7.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Vindicator Armor" = 4.0
+
+	[Mobs.Halucination]
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"The mental damage dealt by hallucinations" = 4.0
+		#Default 10%
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"chance for a hallucination to spawn when the victim is mad" = 10.0
+
+	[Mobs.Wendigo]
+		#Default 75
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Wendigo Max health" = 75.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Wendigo Damage" = 15.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Wendigo Armor" = 8.0
+
+	[Mobs.Inquisitor]
+		#Default 60
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Inquisitor Max health" = 60.0
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Inquisitor Damage" = 20.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Inquisitor Armor" = 7.0
+
+	[Mobs.Brotkatze]
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brotkatze Max health" = 70.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brotkatze Damage" = 15.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brotkatze Armor" = 5.0
+		#Default values: minecraft:poison|120|0 ,spore:mycelium|600|0 ,spore:marker|2400|1
+		"Braiomil Effects" = ["minecraft:wither|200|0", "minecraft:weakness|300|1", "spore:mycelium_ef|600|1", "spore:marker|2400|1"]
+
+	[Mobs."Infected Drowned"]
+		#Default 16
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Drowned Max health" = 16.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Drowned Damage" = 5.0
+		#Default 1
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Drowned Armor" = 1.0
+
+	[Mobs.Phayres]
+		#Default 50
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Phayres Max health" = 50.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Phayres Damage" = 6.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Phayres ranged Damage" = 6.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Phayres Armor" = 10.0
+
+	[Mobs.Umarmer]
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Umarmer Max health" = 70.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Umarmer Damage" = 8.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Umarmer Armor" = 6.0
+
+	[Mobs.Verwahrung]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Verwahrung Max health" = 20.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Verwahrung Armor" = 2.0
+		"Verwahrung buffs" = ["minecraft:speed", "minecraft:strength", "minecraft:resistance", "minecraft:regeneration"]
+		"Verwahrung summons" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:leaper", "spore:slasher", "spore:inf_evoker", "spore:busser", "spore:volatile"]
+
+	[Mobs.Braurei]
+		#Default 80
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Braurei Max health" = 80.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Braurei Armor" = 6.0
+		"Braurei buffs" = ["minecraft:speed", "minecraft:strength", "minecraft:resistance", "minecraft:fire_resistance", "minecraft:regeneration"]
+
+	[Mobs.Usurper]
+		#Default 60
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Usurper Max health" = 60.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Usurper Armor" = 6.0
+
+	[Mobs.Vigil]
+		#Default 60
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Vigil Max health" = 60.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Vigil Armor" = 5.0
+		#Default 15
+		#Range: > 1
+		"Sets the maximum size of the wave" = 15
+		#The base wave of infected a vigil can summon
+		"Vigil min wave" = ["spore:inf_human", "spore:inf_drowned", "spore:inf_villager", "spore:inf_pillager", "spore:inf_drowned"]
+		#The mixed wave of infected a vigil can summon
+		"Vigil mix wave" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:leaper", "spore:inf_evoker", "spore:spitter"]
+		#The max wave of infected a vigil can summon
+		"Vigil max wave" = ["spore:inf_vindicator", "spore:busser", "spore:inf_witch", "spore:brute", "spore:knight", "spore:griefer", "spore:leaper", "spore:inf_evoker", "spore:spitter", "spore:stalker", "spore:howler", "spore:braiomil"]
+
+	[Mobs.Sieger]
+		#Default 300
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Sieger Max health" = 300.0
+		#Default 30
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Sieger Damage" = 30.0
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Sieger Armor" = 25.0
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Sieger Damage Cap , set to 0 to disable" = 70.0
+		#Default values: minecraft:speed|600|0 ,minecraft:strength|600|0 ,minecraft:resistance|600|1
+		"Sieger buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:weakness|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
+		"Sieger debuffs" = ["minecraft:weakness|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
+		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness
+		"Sieger explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness"]
+
+	[Mobs.HindenBurg]
+		#Default 400
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets HindenBurg Max health" = 400.0
+		#Default 400
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets HindenBurg Danage" = 15.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets HindenBurg Armor" = 5.0
+		#Default 40
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets HindenBurg Damage Cap , set to 0 to disable" = 40.0
+		#Default values: minecraft:jump_boost|600|0 ,minecraft:slow_falling|600|0 ,minecraft:resistance|600|1
+		"HindenBurg buffs" = ["minecraft:jump_boost|600|0", "minecraft:slow_falling|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:nausea|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
+		"HindenBurg debuffs" = ["minecraft:nausea|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
+		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness,minecraft:poison,spore:corrosion,minecraft:blindness
+		"Sieger explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness", "minecraft:poison", "spore:corrosion", "minecraft:blindness"]
+
+	[Mobs.GazenBreacher]
+		#Default 350
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets GazenBreacher Max health" = 350.0
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets GazenBreacher Damage" = 25.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets GazenBreacher Armor" = 15.0
+		#Default 100
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets GazenBreacher Damage Cap , set to 0 to disable" = 100.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets GazenBreacher bile damage" = 10.0
+		#Default values: minecraft:speed|600|0 ,minecraft:conduit_power|600|0 ,minecraft:resistance|600|1
+		"GazenBreacher buffs" = ["minecraft:speed|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:darkness|600|0 ,spore:mycelium|600|1 ,minecraft:hunger|600|1
+		"GazenBreacher debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:hunger|600|1"]
+
+	[Mobs.Brute]
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brute Max health" = 70.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brute Damage" = 7.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Brute Armor" = 15.0
+
+	[Mobs.Delusioner]
+		#Default 35
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Delusioner Max health" = 35.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Delusioner Armor" = 2.0
+
+	[Mobs.Mound]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound Max health" = 20.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound Armor" = 2.0
+		#Default 30
+		#Range: > 1
+		"Sets Mound Infection Cooldown" = 30
+		#Default 900
+		#Range: > 1
+		"Sets Mound Ageing Cooldown" = 900
+		#Default 80
+		#Range: > 1
+		"Sets the range in which a mound checks for feedable blocks" = 80
+		#Default 2
+		#Range: > 1
+		"Sets the amount of biomass a mound can feed a structure block at once" = 2
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound default range" = 5.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound range at the age of 2" = 10.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound range at the age of 3" = 15.0
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Mound range at the age of 4" = 20.0
+		#Default true
+		"Should the mound spread hybrid foliage?" = true
+
+	[Mobs."Proto Hivemind"]
+		#Default 100
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Proto Max health" = 100.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Proto Armor" = 10.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Proto Melee damage" = 10.0
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Proto Damage Cap , set to 0 to disable" = 20.0
+		#Default 300
+		#Range: > 1
+		"Sets the linking range" = 300
+		#Default 15
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Chance for the death of a linked evolved infected to trigger the hivemind" = 15.0
+		#Default true
+		"Should the hivemind generate a chunkloader at its location?" = true
+		#Default true
+		"Should the hivemind send Vigils to raid?" = true
+		#Default true
+		"Should the hivemind build a wall of flesh around itself?" = true
+		#Default 1.0
+		#Range: 0.1 ~ 1.7976931348623157E308
+		"Sets The chance for a raid to start" = 1.0
+		"Sentient Mobs targeted by the hivemind" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
+		"Mobs that the proto can summon to defend itself" = ["spore:mound", "spore:vigil", "spore:umarmed", "spore:usurper", "spore:braurei", "spore:verva", "spore:delusioner"]
+
+	[Mobs.Howler]
+		#Default 32
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howler Max health" = 32.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howler Damage" = 5.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howler Armor" = 4.0
+		"Howler buff effect list" = ["minecraft:regeneration", "minecraft:speed", "minecraft:health_boost", "minecraft:strength", "minecraft:resistance"]
+		"Mobs that can be summoned by the Howler" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:knight"]
+
+	[Mobs."Infected Pillager"]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Pillager Max health" = 20.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Pillager Damage" = 6.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Pillager Armor" = 2.0
+		#Default 1.6f
+		"Sets Infected Pillager Range Damage" = 1.6
+
+	[Mobs.Womb]
+		#Default 30
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets the base health of the reconstructor" = 30.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets the base armor of the reconstructor" = 6.0
+		#Default 30
+		#Range: > 1
+		"Sets the time before it gains one biomass" = 30
+		#Default 10
+		#Range: > 1
+		"How much biomass does it get from assimilating infected" = 10
+		#Default 100
+		#Range: > 1
+		"Sets the maximum biomass before it summons a calamity" = 100
+		"Mobs that are summoned for ground support" = ["spore:sieger"]
+		"Mobs that are summoned for air support" = ["spore:hindenburg"]
+		"Mobs that are summoned for water support" = ["spore:gazenbreacher"]
+
+	[Mobs.Scent]
+		#Default true
+		"Should scent spawn?" = true
+		#Default true
+		"Should scent have particles?" = true
+		#Default 4000
+		"Scent life" = 4000
+		#Default 5
+		"The average amount of scents that can spawn in an area" = 5
+		"Overcharged Scent buff effect list" = ["minecraft:regeneration", "minecraft:speed", "minecraft:health_boost", "minecraft:strength", "minecraft:resistance"]
+		#Default 4
+		"OverCharged Scent bonus kill points" = 4
+		#Default 5
+		"The Chance for the scent to spawn from a mob dying 1-100" = 5
+		"Mobs that can be summoned by the Scent" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager"]
+		#Default true
+		"Should scent summon entities?" = true
+		#Default 300
+		"The average amount of time it will take for a mob to be summoned" = 300
+
+	[Mobs."Infected Villager"]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Villager Max health" = 20.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Villager Damage" = 6.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Villager Armor" = 1.0
+
+	[Mobs."Infected Hazmat"]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Hazmat Max health" = 20.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Hazmat Damage" = 6.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Hazmat Armor" = 6.0
+
+	[Mobs.Stalker]
+		#Default 55
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Stalker Max health" = 55.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Stalker Damage" = 10.0
+		#Default 3
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Stalker Armor" = 3.0
+
+	[Mobs.Plagued]
+		#Default 30
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Plagued Max health" = 30.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Plagued Damage" = 5.0
+		#Default 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Plagued Armor" = 5.0
+
+	[Mobs."Infected Wandering Trader"]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Max health" = 20.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Damage" = 6.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Armor" = 1.0
+		#Default true
+		"Can the Infected Wandering Trader use Potions" = true
+
+	[Mobs."Infected Witch"]
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Witch Max health" = 25.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Witch Armor" = 1.0
+		#Default 4
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Witch Melee Damage" = 4.0
+		"Potions that are used to buff infected , NOT effects" = ["minecraft:invisibility", "minecraft:swiftness", "minecraft:strength"]
+		"Potions that are used to attack others , NOT effects" = ["minecraft:weakness", "minecraft:poison", "spore:mycelium_potion", "spore:marker_potion"]
+		#Default true
+		"Should Witches use Potions?" = true
+		#Default 60
+		#Range: > 1
+		"Sets the time before throwing a potion when attacking" = 60
+		#Default 40
+		#Range: > 1
+		"Sets the time before throwing a potion when buffing" = 40
+
+	[Mobs.Braiomil]
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Braiomil Max health" = 25.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Braiomil Armor" = 4.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Braiomil Melee Damage" = 8.0
+		#Default values: minecraft:poison|120|0 ,spore:mycelium|600|0 ,spore:marker|2400|1
+		"Braiomil Effects" = ["minecraft:poison|120|0", "spore:mycelium_ef|600|1", "spore:marker|2400|1"]
+
+	[Mobs."Infected Human"]
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Human Max health" = 15.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Human Damage" = 6.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Human Armor" = 1.0
+
+	[Mobs."Infected Husk"]
+		#Default 21
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Husk Max health" = 21.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Husk Damage" = 6.0
+		#Default 3
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Husk Armor" = 3.0
+
+	[Mobs."Knight "]
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Max health" = 25.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Damage" = 7.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Armor" = 7.0
+
+	[Mobs."Leaper "]
+		#Default 55
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Max health" = 55.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Damage" = 8.0
+		#Default 3
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Armor" = 3.0
+
+	[Mobs."Slasher "]
+		#Default 35
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Max health" = 35.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Damage" = 10.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Armor" = 2.0
+
+	[Mobs."Volatile "]
+		#Default 60
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Max health" = 60.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Damage" = 10.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Armor" = 4.0
+		"Buffs the Volatile might get when hurt" = ["minecraft:regeneration", "minecraft:speed", "minecraft:resistance", "minecraft:fire_resistance"]
+		"Buffs the Volatile might give to its target" = ["minecraft:poison", "minecraft:weakness", "minecraft:hunger", "spore:marker"]
+
+	[Mobs."Scamper "]
+		#Default 35
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Max health" = 25.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Damage" = 6.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Armor" = 3.0
+		#Default 600
+		#Range: > 1
+		"Sets Scamper Age" = 600
+		#Default true
+		"Should a Scamper Summon Mounds on death?" = true
+
+	[Mobs."Infected Player"]
+		#Default 21
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Infected Player Max health" = 21.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Infected Player Damage" = 4.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Infected Player Armor" = 2.0
+
+	[Mobs.Spitter]
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Spiter Max health" = 15.0
+		#Default 1
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Spitter Armor" = 1.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Spitter Damage at long range" = 6.0
+		#Default 1
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Spitter Damage at close range" = 1.0
+
+	[Mobs.Griefer]
+		#Default 3
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Griefer Armor" = 3.0
+		#Default 45
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Griefer Max health" = 45.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Griefer Damage" = 5.0
+		#Default 2
+		"Explosion Radius" = 2
+		#Default true
+		"Should explosion break blocks ?" = true
+
+[Spawns]
+	#Default false
+	"Should mobs spawn after a few days?" = false
+	#Default false
+	"Should mobs be also able to spawn in daytime?" = false
+	#Default 40
+	MobCap = 40
+	#Default minecraft:is_overworld
+	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld"]
+	#Default 3
+	"Days before infected start spawning" = 3
+	"mob|weight|minimum|maximum" = ["spore:inf_human|80|2|5", "spore:inf_drowned|10|1|2", "spore:inf_pillager|40|1|3", "spore:inf_villager|70|1|3", "spore:inf_player|20|1|2", "spore:inf_wanderer|25|1|2", "spore:inf_witch|25|1|2"]
+	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:inf_player|20|1|2", "spore:plagued|10|1|2"]
+
+["Weapons and Tools OwO"]
+
+	["Weapons and Tools OwO".Spear]
+		#Default 800
+		Durability = 800
+		#Default 11
+		#Range: > 1
+		"Melee Damage" = 11
+		#Default 12
+		"Ranged Damage" = 12
+
+	["Weapons and Tools OwO".Saber]
+		#Default 1000
+		Durability = 1000
+		#Default 8
+		#Range: > 1
+		Damage = 8
+
+	["Weapons and Tools OwO".Knife]
+		#Default 400
+		Durability = 400
+		#Default 6
+		#Range: > 1
+		Damage = 6
+
+	["Weapons and Tools OwO".GreatSword]
+		#Default 2000
+		Durability = 2000
+		#Default 12
+		#Range: > 1
+		Damage = 12
+
+	["Weapons and Tools OwO".Crossbow]
+		#Default 700
+		"Crossbow Durability" = 700
+		#Default 1.0
+		"Crossbow Range Damage Modifier" = 1.0
+
+	["Weapons and Tools OwO".Bow]
+		#Default 700
+		"Bow Durability" = 700
+		#Default 1.0
+		"Bow Range Damage Modifier" = 1.0
+		#Default 5
+		#Range: > 1
+		Damage = 5
+
+	["Weapons and Tools OwO".Armads]
+		#Default 2500
+		Durability = 2500
+		#Default 15
+		#Range: > 1
+		Damage = 15
+
+	["Weapons and Tools OwO".Maul]
+		#Default 3000
+		Durability = 3000
+		#Default 7
+		#Range: > 1
+		Damage = 7
+
+	["Weapons and Tools OwO".Sickle]
+		#Default 1200
+		Durability = 1200
+		#Default 12
+		#Range: > 1
+		Damage = 12
+
+	["Weapons and Tools OwO".Scythe]
+		#Default 1200
+		Durability = 1200
+		#Default 8
+		#Range: > 1
+		Damage = 8
+
+	["Weapons and Tools OwO"."Combat Shovel"]
+		#Default 2800
+		Durability = 2800
+		#Default 6
+		#Range: > 1
+		Damage = 6
+
+	["Weapons and Tools OwO".Rapier]
+		#Default 900
+		Durability = 900
+		#Default 10
+		#Range: > 1
+		Damage = 10
+
+	["Weapons and Tools OwO".Mace]
+		#Default 1000
+		Durability = 1000
+		#Default 9
+		#Range: > 1
+		Damage = 9
+
+["Living Exoskeleton"]
+	#Default 1
+	#Range: > 0
+	"Armor Toughness" = 1
+	#Default 1
+	#Range: > 0
+	"Armor Knockback Resistance" = 1
+
+	["Living Exoskeleton".Helmet]
+		#Default 350
+		#Range: > 1
+		"Helmet Durability" = 350
+		#Default 4
+		#Range: > 1
+		"Helmet Protection" = 4
+
+	["Living Exoskeleton".Chestplate]
+		#Default 500
+		#Range: > 1
+		"Chestplate Durability" = 500
+		#Default 10
+		#Range: > 1
+		"Chestplate Protection" = 10
+
+	["Living Exoskeleton"."Chestplate Upgraded"]
+		#Default 700
+		#Range: > 1
+		"Chestplate Durability" = 700
+		#Default 13
+		#Range: > 1
+		"Chestplate Protection" = 13
+
+	["Living Exoskeleton".Leggings]
+		#Default 400
+		#Range: > 1
+		"Leggings Durability" = 400
+		#Default 9
+		#Range: > 1
+		"Leggings Protection" = 9
+
+	["Living Exoskeleton".Boots]
+		#Default 350
+		#Range: > 1
+		"Boots Durability" = 350
+		#Default 4
+		#Range: > 1
+		"Boots Protection" = 4
+
+["Plated Exoskeleton"]
+	#Default 1
+	#Range: > 0
+	"Armor Toughness" = 1
+	#Default 0
+	#Range: > 0
+	"Armor Knockback Resistance" = 0
+
+	["Plated Exoskeleton".Helmet]
+		#Default 350
+		#Range: > 1
+		"Helmet Durability" = 450
+		#Default 3
+		#Range: > 1
+		"Helmet Protection" = 3
+
+	["Plated Exoskeleton".Chestplate]
+		#Default 500
+		#Range: > 1
+		"Chestplate Durability" = 600
+		#Default 7
+		#Range: > 1
+		"Chestplate Protection" = 7
+
+	["Plated Exoskeleton".Leggings]
+		#Default 400
+		#Range: > 1
+		"Leggings Durability" = 500
+		#Default 6
+		#Range: > 1
+		"Leggings Protection" = 5
+
+	["Plated Exoskeleton".Boots]
+		#Default 350
+		#Range: > 1
+		"Boots Durability" = 450
+		#Default 2
+		#Range: > 1
+		"Boots Protection" = 2
+
+["Flesh Exoskeleton"]
+	#Default 0
+	#Range: > 0
+	"Armor Toughness" = 0
+	#Default 0
+	#Range: > 0
+	"Armor Knockback Resistance" = 0
+
+	["Flesh Exoskeleton".Helmet]
+		#Default 350
+		#Range: > 1
+		"Helmet Durability" = 350
+		#Default 2
+		#Range: > 1
+		"Helmet Protection" = 2
+
+	["Flesh Exoskeleton".Chestplate]
+		#Default 500
+		#Range: > 1
+		"Chestplate Durability" = 500
+		#Default 6
+		#Range: > 1
+		"Chestplate Protection" = 6
+
+	["Flesh Exoskeleton".Leggings]
+		#Default 400
+		#Range: > 1
+		"Leggings Durability" = 400
+		#Default 5
+		#Range: > 1
+		"Leggings Protection" = 5
+
+	["Flesh Exoskeleton".Boots]
+		#Default 350
+		#Range: > 1
+		"Boots Durability" = 350
+		#Default 2
+		#Range: > 1
+		"Boots Protection" = 2
+
+[Elytron]
+	#Default 0
+	#Range: > 0
+	"Knockback Resistance" = 0
+	#Default 500
+	#Range: > 1
+	Durability = 500
+	#Default 5
+	#Range: > 1
+	Protection = 5
+	#Default 1
+	#Range: > 0
+	Toughness = 1
+

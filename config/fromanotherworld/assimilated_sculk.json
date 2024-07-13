@@ -1,0 +1,25 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 3
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "reveal_from_detecting_mobs": {
+    "description": "Should Assimilated Sculk Activators reveal nearby assimilated sculk if they detect a mob?",
+    "value": false
+  },
+  "tentacle_view_range": {
+    "description1": "How far should you be able to see Assimilated Sculk Tentacles from?",
+    "description2": "Reducing this should help with performance",
+    "value": 64
+  },
+  "alien_assimilated_sculk_placement": {
+    "description1": "1 in this number chance every 3 seconds for the Alien Thing to attempt to place an Assimilated Sculk Tentacle while in the 1951 form.",
+    "description2": "Values less than 1 disable this feature.",
+    "value": 20
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 3
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "special_behaviour_rarity": {
+    "description": "1 in this number chance for Things to get each special ability.",
+    "value": 25
+  },
+  "max_miniboss_tier": {
+    "description": "Maximum tier that minibosses can grow to. They start at tier 0.",
+    "value": 3
+  },
+  "crawler_merge_chance": {
+    "description": "1 in this number chance every tick to attempt to merge.",
+    "value": 800
+  },
+  "juliette_thing_merge_chance": {
+    "value": 800
+  },
+  "palmer_thing_merge_chance": {
+    "value": 800
+  },
+  "split_face_merge_chance": {
+    "value": 800
+  },
+  "blair_thing_merge_chance": {
+    "value": 800
+  },
+  "dogbeast_spitter_merge_chance": {
+    "value": 800
+  },
+  "dogbeast_merge_chance": {
+    "value": 800
+  },
+  "impaler_merge_chance": {
+    "value": 800
+  },
+  "prowler_merge_chance": {
+    "value": 1600
+  },
+  "beast_merge_chance": {
+    "value": 800
+  },
+  "burrowing": {
+    "description": "Most Things should be able to burrow if they cannot reach where they are trying to pathfind to.",
+    "value": false
+  },
+  "max_griefing_hardness": {
+    "description1": "The maximum hardness that Things can break. Set to a negative value to disable all Thing block breaking.",
+    "description2": "Blocks with negative hardness values can never be broken.",
+    "description3": "To blacklist specific blocks, add to the thing_immune tag using a data pack.",
+    "value": 49.0
+  },
+  "revealed_damage_multiplier": {
+    "description1": "The damage multiplier for revealed tier Things such as Chest Spitters and Vine Tentacles when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.25
+  },
+  "fodder_damage_multiplier": {
+    "description1": "The damage multiplier for fodder tier Things such as Blood Crawlers when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 1.0
+  },
+  "split_damage_multiplier": {
+    "description1": "The damage multiplier for split tier Things such as Crawlers and DogBeast Spitters when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.2
+  },
+  "standard_damage_multiplier": {
+    "description1": "The damage multiplier for standard tier Things such as Juliette Things and DogBeasts when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.2
+  },
+  "elite_damage_multiplier": {
+    "description1": "The damage multiplier for elite tier Things such as Palmer Things and Impalers when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.2
+  },
+  "merged_damage_multiplier": {
+    "description1": "The damage multiplier for merged tier Things such as Split Faces and Prowlers when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.1
+  },
+  "miniboss_damage_multiplier": {
+    "description1": "The damage multiplier for miniboss tier Things such as Blair Things and Beasts when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.05
+  },
+  "special_miniboss_damage_multiplier": {
+    "description1": "The damage multiplier for special_miniboss tier Things such as Alien Things when not vulnerable",
+    "description2": "0.0 means they will take no damage, 0.5 means they will take half damage, 1.0 means they will take full damage",
+    "value": 0.05
+  }
+}

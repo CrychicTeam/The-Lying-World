@@ -1,0 +1,26 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 2
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "regen_cancelling": {
+    "description": "Effects that prevent Things from resisting damage and healing.",
+    "value": [
+      "gigeresque:acid",
+      "minecraft:wither",
+      "alexscaves:irradiated"
+    ]
+  },
+  "thing_immune": {
+    "description": "Effects that cannot be applied to Things.",
+    "value": [
+      "minecraft:poison",
+      "spore:*"
+    ]
+  }
+}

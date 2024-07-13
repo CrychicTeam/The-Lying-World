@@ -1,0 +1,100 @@
+{
+  "version": {
+    "description1": "Config version number used for auto_regen_outdated.",
+    "description2": "Do not modify.",
+    "value": 2
+  },
+  "auto_regen_outdated": {
+    "description": "Should this file automatically regenerate whenever the default options are changed?",
+    "value": true
+  },
+  "enabled": {
+    "description1": "Should Things spawn like vanilla mobs?",
+    "description2": "Not recommended for the intended experience.",
+    "value": false
+  },
+  "first_spawning_day": {
+    "description1": "The first day that Things can start spawning naturally.",
+    "description2": "This option treats the first day in a world as day 1, unlike the vanilla F3 screen.",
+    "value": 2
+  },
+  "failure_chance": {
+    "description1": "The chance for a Thing to fail to spawn even when all the criteria are met.",
+    "description2": "Can be used to make Things spawn less than vanilla spawn weight values allow, which is useful considering they do not despawn",
+    "description3": "0.0 - Things never fail to spawn",
+    "description4": "1.0 - Things always fail to spawn",
+    "value": 0.95
+  },
+  "blood_crawler": {
+    "enabled": true,
+    "spawn_weight": 10,
+    "minimum_group_size": 3,
+    "maximum_group_size": 5
+  },
+  "crawler": {
+    "enabled": true,
+    "spawn_weight": 5,
+    "minimum_group_size": 1,
+    "maximum_group_size": 3
+  },
+  "juliette_thing": {
+    "enabled": true,
+    "spawn_weight": 5,
+    "minimum_group_size": 1,
+    "maximum_group_size": 2
+  },
+  "palmer_thing": {
+    "enabled": true,
+    "spawn_weight": 3,
+    "minimum_group_size": 1,
+    "maximum_group_size": 1
+  },
+  "split_face": {
+    "enabled": true,
+    "spawn_weight": 1,
+    "minimum_group_size": 1,
+    "maximum_group_size": 1
+  },
+  "blair_thing": {
+    "enabled": true,
+    "spawn_weight": 1,
+    "minimum_group_size": 1,
+    "maximum_group_size": 1
+  },
+  "dogbeast_spitter": {
+    "enabled": true,
+    "spawn_weight": 10,
+    "minimum_group_size": 1,
+    "maximum_group_size": 3
+  },
+  "dogbeast": {
+    "enabled": true,
+    "spawn_weight": 1,
+    "minimum_group_size": 8,
+    "maximum_group_size": 24
+  },
+  "impaler": {
+    "enabled": true,
+    "spawn_weight": 5,
+    "minimum_group_size": 1,
+    "maximum_group_size": 2
+  },
+  "prowler": {
+    "enabled": true,
+    "spawn_weight": 1,
+    "minimum_group_size": 2,
+    "maximum_group_size": 2
+  },
+  "beast": {
+    "enabled": true,
+    "spawn_weight": 1,
+    "minimum_group_size": 1,
+    "maximum_group_size": 1
+  },
+  "alien_thing": {
+    "enabled": false,
+    "spawn_weight": 1,
+    "minimum_group_size": 1,
+    "maximum_group_size": 1
+  }
+}
