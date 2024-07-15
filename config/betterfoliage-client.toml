@@ -22,5 +22,5 @@
 	forceForgeLighting = true
 	#Inverse of the rarity of the extra grass. Increase the value to make it less common.
 	#Range: > 1
-	extraGrassRarity = 2
+	extraGrassRarity = 7
 

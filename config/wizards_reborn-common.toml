@@ -1,0 +1,10 @@
+#Standard wissen color RED.
+#Range: 0 ~ 255
+standardWissenColorR = 119
+#Standard wissen color GREEN.
+#Range: 0 ~ 255
+standardWissenColorG = 164
+#Standard wissen color BLUE.
+#Range: 0 ~ 255
+standardWissenColorB = 208
+

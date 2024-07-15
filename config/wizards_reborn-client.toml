@@ -1,0 +1,124 @@
+
+#Graphics
+[graphics]
+	#Enable better particle/effect layering.
+	#Fixes particles and effects rendering behind clouds and weather.
+	#NOTE: Does NOT work with fabulous graphics mode.
+	betterLayering = true
+
+	#Animations
+	[graphics.animations]
+		#Enable large item models.
+		largeItemModel = true
+		#Enable spells animations player.
+		spellsAnimation = true
+		#Enable spells item animations.
+		spellsItemAnimation = true
+		#Enable spells first person item animations.
+		spellsFirstPersonItemAnimation = true
+
+	#Particles
+	[graphics.particles]
+		#Limit wissen rays per tick.
+		#Range: 0 ~ 1000
+		wissenRaysLimit = 200
+		#Enable dropping items particles.
+		itemParticle = true
+		#Enable items particles in GUI.
+		itemGuiParticle = true
+
+#Arcanemicon
+[arcanemicon]
+	#Enable hard mode in research.
+	#NOTE: Always on in hardcore.
+	researchHardMode = false
+	#Enable old type of monogram outline in research.
+	oldResearchMonogramOutline = false
+	#Enable bright type of monogram outline in research.
+	brightResearchMonogramOutline = false
+	#Enable connects with monogram in research.
+	researchMonogramConnects = true
+	#Enable monogram glow.
+	monogramGlow = true
+	#Enable monogram glow color.
+	monogramGlowColor = true
+	#Enable monogram color.
+	monogramColor = false
+	#Enable monogram glow rays.
+	monogramRays = true
+	#Enable centered value in config.
+	configCenter = true
+
+#Numerical
+[numerical]
+	#Enable numerical wissen.
+	wissen = false
+	#Enable numerical cooldown.
+	cooldown = false
+	#Enable show light name.
+	light = false
+	#Enable numerical experience.
+	experience = false
+	#Enable numerical heat.
+	heat = false
+	#Enable numerical fluid.
+	fluid = true
+	#Enable numerical steam.
+	steam = false
+
+#Overlay
+[overlay]
+
+	#Arcane Wand
+	[overlay.arcaneWand]
+		#Enable display HUD on top.
+		up = true
+		#Enable display HUD on right.
+		right = false
+		#Enable side display HUD.
+		sideHud = false
+		#Enable side display bar.
+		sideBar = false
+		#Enable horizontal bar.
+		horizontalBar = false
+		#HUD X offset.
+		xOffset = 0
+		#HUD Y offset.
+		yOffset = 0
+		#Second HUD X offset.
+		secondXOffset = 0
+		#Second HUD Y offset.
+		secondYOffset = 0
+		#Bar X offset.
+		barXOffset = 0
+		#Bar Y offset.
+		barYOffset = 0
+		#Enable second HUD free offset.
+		secondHudFree = false
+		#Enable bar free offset.
+		barFree = false
+		#Enable draw cooldown in HUD.
+		cooldownText = false
+		#Enable draw wissen in HUD.
+		wissenText = false
+		#Enable reverse bar.
+		reverseBar = false
+		#Enable show empty spells in bar.
+		showEmptySpells = true
+
+#Menu
+[menu]
+	#Enable custom panorama.
+	customPanorama = false
+	#Enable custom panorama button.
+	panoramaButton = true
+	#Custom panorama button row.
+	#Range: 0 ~ 4
+	panoramaButtonRow = 3
+	#Custom panorama button X offset with row.
+	panoramaButtonRowXOffset = 4
+	#Custom panorama button X offset.
+	panoramaButtonXOffset = 0
+	#Custom panorama button Y offset.
+	panoramaButtonYOffset = 0
+
