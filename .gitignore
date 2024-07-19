@@ -35,3 +35,4 @@ example.*
 /shaderpacks
 /resourcepacks
 config/oculus.properties
+config/blockswap/known_states

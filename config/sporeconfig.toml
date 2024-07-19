@@ -7,11 +7,10 @@
 
 ["Griefing Parameters"]
 	"The block breaking hardness of calamities" = 5
-	"The block breaking hardness of hyper evolved" = 3
 	"The block breaking hardness of experiments" = 1
+	"The block breaking hardness of hyper evolveds" = 3
 
 ["Global Variables"]
-	"The amount of needed Hiveminds for the world to change" = 3
 	"Global Damage Modifier" = 1.0
 	"Global Health Modifier" = 1.0
 	"Global Armor Modifier" = 1.0
@@ -24,23 +23,7 @@
 	#Default true
 	"Should some infected have higher thinking such as opening doors or trying to break certain blocks?" = true
 	"Hunger in seconds" = 300
-
-[TargetingTasks]
-	#Default true
-	"Should attack other mobs?" = true
-	#Default false
-	"Should attack Animals?" = false
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
-	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
-	"Mobs that will target infected" = ["minecraft:iron_golem", "guardvillagers:guard", "roamers:roamer"]
-	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
-
-["MobRoles ,decides some of the interactions between the infected mobs"]
-	Basic_Infected = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:inf_witch", "spore:inf_pillager", "spore:inf_player"]
-	Evolved_Infected = ["spore:braiomil", "spore:knight", "spore:griefer", "spore:busser", "spore:spitter", "spore:leaper", "spore:slasher", "spore:howler", "spore:stalker", "spore:brute", "spore:inf_evoker", "spore:inf_vindicator"]
-	Support = ["spore:inf_witch", "spore:braiomil", "spore:howler", "spore:busser"]
-	Disposable = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:slasher", "spore:volatile", "spore:inf_vindicator", "minecraft:creeper"]
-	Ranged = ["spore:spitter", "spore:inf_pillager", "spore:braiomil", "spore:inf_evoker"]
+	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 3
 
 ["Mob Evolutions and Infection System"]
 
@@ -50,13 +33,11 @@
 		"Infected Pillager Evolutions" = ["spore:howler", "spore:stalker", "spore:brute"]
 		"Infected Witch Evolutions" = ["spore:volatile"]
 		"Mobs that won't despawn after being created from assimilation" = ["spore:inf_villager", "spore:inf_pillager", "spore:inf_witch"]
-		#Default true
-		"Should mobs with no kills starve?" = true
 		#Default 300
 		"Evolution Timer in seconds" = 300
 		#Default 1
 		"Minimum amount of kills to start the evolution" = 1
-		#Default 5
+		#Default 7
 		"Minimum amount of kills to start the hyper evolution" = 5
 
 	["Mob Evolutions and Infection System".Infections]
@@ -100,14 +81,6 @@
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Infected Vindicator Armor" = 4.0
-
-	[Mobs.Halucination]
-		#Default 4
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"The mental damage dealt by hallucinations" = 4.0
-		#Default 10%
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"chance for a hallucination to spawn when the victim is mad" = 10.0
 
 	[Mobs.Wendigo]
 		#Default 75
@@ -244,47 +217,6 @@
 		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness
 		"Sieger explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness"]
 
-	[Mobs.HindenBurg]
-		#Default 400
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets HindenBurg Max health" = 400.0
-		#Default 400
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets HindenBurg Danage" = 15.0
-		#Default 5
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets HindenBurg Armor" = 5.0
-		#Default 40
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets HindenBurg Damage Cap , set to 0 to disable" = 40.0
-		#Default values: minecraft:jump_boost|600|0 ,minecraft:slow_falling|600|0 ,minecraft:resistance|600|1
-		"HindenBurg buffs" = ["minecraft:jump_boost|600|0", "minecraft:slow_falling|600|0", "minecraft:resistance|600|1"]
-		#Default values: minecraft:nausea|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
-		"HindenBurg debuffs" = ["minecraft:nausea|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
-		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness,minecraft:poison,spore:corrosion,minecraft:blindness
-		"Sieger explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness", "minecraft:poison", "spore:corrosion", "minecraft:blindness"]
-
-	[Mobs.GazenBreacher]
-		#Default 350
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets GazenBreacher Max health" = 350.0
-		#Default 25
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets GazenBreacher Damage" = 25.0
-		#Default 15
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets GazenBreacher Armor" = 15.0
-		#Default 100
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets GazenBreacher Damage Cap , set to 0 to disable" = 100.0
-		#Default 10
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets GazenBreacher bile damage" = 10.0
-		#Default values: minecraft:speed|600|0 ,minecraft:conduit_power|600|0 ,minecraft:resistance|600|1
-		"GazenBreacher buffs" = ["minecraft:speed|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
-		#Default values: minecraft:darkness|600|0 ,spore:mycelium|600|1 ,minecraft:hunger|600|1
-		"GazenBreacher debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:hunger|600|1"]
-
 	[Mobs.Brute]
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -336,7 +268,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Mound range at the age of 4" = 20.0
 		#Default true
-		"Should the mound spread hybrid foliage?" = true
+		"Should the mound spread foliage and infect blocks?" = true
 
 	[Mobs."Proto Hivemind"]
 		#Default 100
@@ -348,9 +280,6 @@
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Proto Melee damage" = 10.0
-		#Default 20
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Proto Damage Cap , set to 0 to disable" = 20.0
 		#Default 300
 		#Range: > 1
 		"Sets the linking range" = 300
@@ -368,6 +297,9 @@
 		"Sets The chance for a raid to start" = 1.0
 		"Sentient Mobs targeted by the hivemind" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		"Mobs that the proto can summon to defend itself" = ["spore:mound", "spore:vigil", "spore:umarmed", "spore:usurper", "spore:braurei", "spore:verva", "spore:delusioner"]
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Proto Damage Cap, set to 0 to disable" = 20.0
 
 	[Mobs.Howler]
 		#Default 32
@@ -396,44 +328,44 @@
 		"Sets Infected Pillager Range Damage" = 1.6
 
 	[Mobs.Womb]
-		#Default 30
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets the base health of the reconstructor" = 30.0
-		#Default 6
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets the base armor of the reconstructor" = 6.0
-		#Default 30
-		#Range: > 1
-		"Sets the time before it gains one biomass" = 30
-		#Default 10
-		#Range: > 1
-		"How much biomass does it get from assimilating infected" = 10
-		#Default 100
-		#Range: > 1
-		"Sets the maximum biomass before it summons a calamity" = 100
 		"Mobs that are summoned for ground support" = ["spore:sieger"]
 		"Mobs that are summoned for air support" = ["spore:hindenburg"]
 		"Mobs that are summoned for water support" = ["spore:gazenbreacher"]
+		#Default 30
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets the base health of the Womb" = 30.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets the base armor of the Womb" = 6.0
+		#Default 30
+		#Range: > 1
+		"Sets the time before the Womb gains one biomass" = 30
+		#Default 10
+		#Range: > 1
+		"How much biomass does it get from consuming infected" = 10
+		#Default 100
+		#Range: > 1
+		"Sets the required biomass before it summons a calamity" = 100
 
 	[Mobs.Scent]
-		#Default true
-		"Should scent spawn?" = true
-		#Default true
-		"Should scent have particles?" = true
 		#Default 4000
 		"Scent life" = 4000
-		#Default 5
-		"The average amount of scents that can spawn in an area" = 5
 		"Overcharged Scent buff effect list" = ["minecraft:regeneration", "minecraft:speed", "minecraft:health_boost", "minecraft:strength", "minecraft:resistance"]
-		#Default 4
-		"OverCharged Scent bonus kill points" = 4
-		#Default 5
-		"The Chance for the scent to spawn from a mob dying 1-100" = 5
 		"Mobs that can be summoned by the Scent" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager"]
 		#Default true
 		"Should scent summon entities?" = true
 		#Default 300
 		"The average amount of time it will take for a mob to be summoned" = 300
+		#Default true
+		"Should Scents spawn?" = true
+		#Default true
+		"Should Scents have particles?" = true
+		#Default 5
+		"The max amount of Scents that can spawn in an area" = 5
+		#Default 4
+		"Overcharged Scent bonus kill points" = 4
+		#Default 5
+		"The chance for the scent to spawn from a mob dying (1-100)" = 5
 
 	[Mobs."Infected Villager"]
 		#Default 20
@@ -548,68 +480,6 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Infected Husk Armor" = 3.0
 
-	[Mobs."Knight "]
-		#Default 25
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Max health" = 25.0
-		#Default 7
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Damage" = 7.0
-		#Default 7
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Armor" = 7.0
-
-	[Mobs."Leaper "]
-		#Default 55
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Max health" = 55.0
-		#Default 8
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Damage" = 8.0
-		#Default 3
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Armor" = 3.0
-
-	[Mobs."Slasher "]
-		#Default 35
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Max health" = 35.0
-		#Default 10
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Damage" = 10.0
-		#Default 2
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Armor" = 2.0
-
-	[Mobs."Volatile "]
-		#Default 60
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Max health" = 60.0
-		#Default 10
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Damage" = 10.0
-		#Default 4
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Armor" = 4.0
-		"Buffs the Volatile might get when hurt" = ["minecraft:regeneration", "minecraft:speed", "minecraft:resistance", "minecraft:fire_resistance"]
-		"Buffs the Volatile might give to its target" = ["minecraft:poison", "minecraft:weakness", "minecraft:hunger", "spore:marker"]
-
-	[Mobs."Scamper "]
-		#Default 35
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Max health" = 25.0
-		#Default 10
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Damage" = 6.0
-		#Default 2
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Armor" = 3.0
-		#Default 600
-		#Range: > 1
-		"Sets Scamper Age" = 600
-		#Default true
-		"Should a Scamper Summon Mounds on death?" = true
-
 	[Mobs."Infected Player"]
 		#Default 21
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -649,6 +519,137 @@
 		"Explosion Radius" = 2
 		#Default true
 		"Should explosion break blocks ?" = true
+
+	[Mobs.Hallucination]
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"The mental damage dealt by hallucinations" = 4.0
+		#Default 10%
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"chance for a hallucination to spawn when the victim is mad" = 10.0
+
+	[Mobs.Gazenbreacher]
+		#Default 350
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gazenbreacher Max health" = 350.0
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gazenbreacher Damage" = 25.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gazenbreacher Armor" = 15.0
+		#Default 100
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gazenbreacher Damage Cap , set to 0 to disable" = 100.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gazenbreacher bile damage" = 10.0
+		#Default values: minecraft:speed|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
+		"Gazenbreacher buffs" = ["minecraft:speed|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:darkness|600|0, spore:mycelium|600|1, minecraft:hunger|600|1
+		"Gazenbreacher debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:hunger|600|1"]
+
+	[Mobs.Hindenburg]
+		#Default 400
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Hindenburg Max health" = 400.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Hindenburg Danage" = 15.0
+		#Default 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Hindenburg Armor" = 5.0
+		#Default 40
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Hindenburg Damage Cap , set to 0 to disable" = 40.0
+		#Default values: minecraft:jump_boost|600|0, minecraft:slow_falling|600|0, minecraft:resistance|600|1
+		"Hindenburg buffs" = ["minecraft:jump_boost|600|0", "minecraft:slow_falling|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:nausea|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
+		"Hindenburg debuffs" = ["minecraft:nausea|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
+		#Default values: minecraft:wither, spore:mycelium, minecraft:weakness, minecraft:poison, spore:corrosion, minecraft:blindness
+		"Hindenburg explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness", "minecraft:poison", "spore:corrosion", "minecraft:blindness"]
+
+	[Mobs.Knight]
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Max health" = 25.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Damage" = 7.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Knight Armor" = 7.0
+
+	[Mobs.Gastgeber]
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Max health" = 70.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Damage" = 7.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Armor" = 6.0
+		#Default 30
+		#Range: > 1
+		"Seconds before Gastgeber spreads foliage" = 30
+		#Default 600
+		#Range: > 1
+		"Seconds before Gastgeber moves from the area" = 600
+		#Default 25
+		#Range: > 1
+		"Infection Range" = 25
+
+	[Mobs.Leaper]
+		#Default 55
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Max health" = 55.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Damage" = 8.0
+		#Default 3
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Leaper Armor" = 3.0
+
+	[Mobs.Slasher]
+		#Default 35
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Max health" = 35.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Damage" = 10.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Slasher Armor" = 2.0
+
+	[Mobs.Volatile]
+		#Default 60
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Max health" = 60.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Damage" = 10.0
+		#Default 4
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Volatile Armor" = 4.0
+		"Buffs the Volatile might get when hurt" = ["minecraft:regeneration", "minecraft:speed", "minecraft:resistance", "minecraft:fire_resistance"]
+		"Buffs the Volatile might give to its target" = ["minecraft:poison", "minecraft:weakness", "minecraft:hunger", "spore:marker"]
+
+	[Mobs.Scamper]
+		#Default 25
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Max health" = 25.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Damage" = 6.0
+		#Default 3
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Scamper Armor" = 3.0
+		#Default 600
+		#Range: > 1
+		"Sets Scamper Age" = 600
+		#Default true
+		"Should Scampers summon Mounds on death?" = true
 
 [Spawns]
 	#Default false
@@ -901,4 +902,21 @@
 	#Default 1
 	#Range: > 0
 	Toughness = 1
+
+["Targeting Tasks"]
+	#Default true
+	"Should attack other mobs?" = true
+	#Default false
+	"Should attack Animals?" = false
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
+	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
+	"Mobs that will target infected" = ["minecraft:iron_golem", "minecraft:snow_golem", "guardvillagers:guard", "roamers:roamer"]
+	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
+
+["Mob Roles, decides some of the interactions between the infected mobs"]
+	"Basic Infecteds" = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:inf_witch", "spore:inf_pillager", "spore:inf_player"]
+	"Evolved Infecteds" = ["spore:braiomil", "spore:knight", "spore:griefer", "spore:busser", "spore:spitter", "spore:leaper", "spore:slasher", "spore:howler", "spore:stalker", "spore:brute", "spore:inf_evoker", "spore:inf_vindicator"]
+	Support = ["spore:inf_witch", "spore:braiomil", "spore:howler", "spore:busser"]
+	Disposable = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:slasher", "spore:volatile", "spore:inf_vindicator", "minecraft:creeper"]
+	Ranged = ["spore:spitter", "spore:inf_pillager", "spore:braiomil", "spore:inf_evoker"]
 
