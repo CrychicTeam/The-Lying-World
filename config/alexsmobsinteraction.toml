@@ -312,6 +312,10 @@
 		#Whether Warped Toads dont eat anything when tamed unless tamer attacks
 		WARPED_FRIENDLY_ENABLED = true
 
+	[Mobs.Rhino]
+		#Causes Rhinos to sometimes accidentally attack moving baby rhinos due to their extremely poor vision
+		ACCIDENTAL_BETRAYAL_ENABLED = true
+
 ["April Fools"]
 	#AMI April Fools Activation
 	GOOFY_MODE_ENABLED = false
