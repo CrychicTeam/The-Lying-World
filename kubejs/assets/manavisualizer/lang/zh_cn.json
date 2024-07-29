@@ -1,0 +1,8 @@
+{
+    "item.manavisualizer.manareader": "魔力读取器",
+    "creativetab.manatab": "Mana Visualizer",
+    "item.manareader.info": "魔力计测：%s/%s",
+    "item.manareader.info.short": "魔力计测：%s",
+    "item.manareader.tooltip": "右键单击魔力池或产能花，查看其内部的魔力含量。",
+    "MonianHelloTranslateUUID": "60855351-262b-4294-970c-d876d469bca0"
+}

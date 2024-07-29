@@ -1,0 +1,14 @@
+{
+    "item.evoodooers.hair_tuft": "一簇头发",
+    "item.evoodooers.hair_tuft.named": "%s的一簇头发",
+    "item.evoodooers.day_record": "§b音乐唱片",
+    "item.evoodooers.day_record.desc": "LudoCrypt - Day",
+    "block.evoodooers.voodoo_doll": "巫毒娃娃",
+    "block.evoodooers.voodoo_doll.named": "%s玩偶",
+    "block.evoodooers.bed.no_hair": "你在这床上没找到头发。",
+    "block.evoodooers.bed.hair": "你在床上发现了%s的头发。",
+    "block.evoodooers.voodoo_doll.no_player": "这个玩偶不与玩家绑定。",
+    "block.evoodooers.voodoo_doll.no_player_found": "%s不在这个世界上。",
+    "itemGroup.evoodooers_tab": "Evoodooers",
+    "MonianHelloTranslateUUID": "d20a78d9-b3af-4f88-86ee-34bc88885418"
+}

@@ -1,0 +1,8 @@
+{
+    "item.manavisualizer.manareader": "Mana Reader",
+    "creativetab.manatab": "Mana Visualizer",
+    "item.manareader.info": "Mana Level: %s/%s",
+    "item.manareader.info.short": "Mana Level: %s",
+    "item.manareader.tooltip": "Right click on mana pool or mana generating flower to see how much it is full in numbers.",
+    "MonianHelloTranslateUUID": "60855351-262b-4294-970c-d876d469bca0"
+}
