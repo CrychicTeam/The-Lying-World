@@ -13,9 +13,9 @@
     "block.verdantvibes.money_tree": "马拉巴栗",
     "block.verdantvibes.money_tree.info": "学名：Pachira aquatica\n（又名发财树）",
     "block.verdantvibes.potted_money_tree": "发财树盆栽",
-    "block.verdantvibes.lobelia": "大山梗菜",
+    "block.verdantvibes.lobelia": "大蓝半边莲",
     "block.verdantvibes.lobelia.info": "学名：Lobelia siphilitica",
-    "block.verdantvibes.potted_lobelia": "大山梗菜盆栽",
+    "block.verdantvibes.potted_lobelia": "大蓝半边莲盆栽",
     "block.verdantvibes.tall_dragon_tree": "高缘叶龙血树",
     "block.verdantvibes.dragon_tree": "缘叶龙血树",
     "block.verdantvibes.dragon_tree.info": "学名：Dracaena marginata",
@@ -39,7 +39,7 @@
     "verdantvibes.advancements.botanicalbeginnings.description": "让我们把它放在花盆里展示吧！",
     "verdantvibes.advancements.horticulturalhoarder.title": "园艺爱好者",
     "verdantvibes.advancements.horticulturalhoarder.description": "收集所有新的盆栽植物！",
-    "verdantvibes.advancements.potterspivot.title": "下一级盆栽",
-    "verdantvibes.advancements.potterspivot.description": "按住 Shift 键-右键单击即可转动植物！疯狂",
+    "verdantvibes.advancements.potterspivot.title": "进阶盆艺",
+    "verdantvibes.advancements.potterspivot.description": "按住Shift并右键即可转动植物！虽然听起来有点荒唐。",
     "MonianHelloTranslateUUID": "0ddd16d8-1f00-424f-9971-efdeefdf0a3f"
 }

@@ -30,7 +30,7 @@
 		offset_y = 0.125
 		#Third person camera z-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		offset_z = 2.8000000000000043
+		offset_z = 2.7750000000000044
 
 		[camera.offset.min]
 			#If x-offset is limited this is the minimum amount.
@@ -66,36 +66,93 @@
 
 			[camera.offset.multiplier.passenger]
 				#x-offset multiplier for when the player is a passenger.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_x = 1.0
 				#y-offset multiplier for when the player is a passenger.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_y = 1.0
 				#z-offset multiplier for when the player is a passenger.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_z = 1.0
 
 			[camera.offset.multiplier.sprint]
 				#x-offset multiplier for when the player is sprinting.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_x = 1.0
 				#y-offset multiplier for when the player is sprinting.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_y = 1.0
 				#z-offset multiplier for when the player is sprinting.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_z = 1.0
 
 			[camera.offset.multiplier.aiming]
 				#x-offset multiplier for when the player is aiming.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_x = 1.0
 				#y-offset multiplier for when the player is aiming.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_y = 1.0
 				#z-offset multiplier for when the player is aiming.
-				#Range: 0.0 ~ 1.7976931348623157E308
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				multiplier_offset_z = 1.0
+
+			[camera.offset.multiplier.fall_flying]
+				#x-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 1.0
+				#y-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 1.0
+				#z-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 1.0
+
+		[camera.offset.modifiers]
+
+			[camera.offset.modifiers.passenger]
+				#x-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.sprint]
+				#x-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.aiming]
+				#x-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.fall_flying]
+				#x-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
 
 [perspective]
 	#The default perspective when you load the game.
@@ -138,11 +195,6 @@
 	#Crosshair type to use for shoulder surfing.
 	#Allowed Values: ADAPTIVE, DYNAMIC, STATIC, STATIC_WITH_1PP, DYNAMIC_WITH_1PP
 	crosshair_type = "STATIC"
-	#The raytrace distance used for the dynamic crosshair.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	custom_raytrace_distance = 400.0
-	#Whether or not to use the custom raytrace distance used for the dynamic crosshair.
-	use_custom_raytrace_distance = true
 	#Items that when held, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
 	adaptive_crosshair_hold_items = ["minecraft:snowball", "minecraft:egg", "minecraft:experience_bottle", "minecraft:ender_pearl", "minecraft:splash_potion", "minecraft:fishing_rod", "minecraft:lingering_potion"]
 	#Items that when used, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
@@ -169,4 +221,19 @@
 [audio]
 	#Whether to center sounds made by the player.
 	center_player_sounds = false
+
+[object_picker]
+	#The raytrace distance used for the dynamic crosshair.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	custom_raytrace_distance = 400.0
+	#Whether or not to use the custom raytrace distance used for the dynamic crosshair.
+	use_custom_raytrace_distance = true
+
+	[object_picker.pick_origin]
+		#The origin where the entity pick starts.
+		#Allowed Values: PLAYER, CAMERA
+		entity_pick_origin = "PLAYER"
+		#The origin where the block pick starts.
+		#Allowed Values: PLAYER, CAMERA
+		block_pick_origin = "PLAYER"
 

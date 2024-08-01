@@ -36,3 +36,5 @@ example.*
 /resourcepacks
 config/oculus.properties
 config/blockswap/known_states
+config/embeddium
+config/xaerominimap_entities.json

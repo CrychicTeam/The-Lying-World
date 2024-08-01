@@ -1,0 +1,21 @@
+{
+  "too_close_node_message": "距离上一个节点太近了",
+  "path_invalid_maximum": "道路太长",
+  "invalid_dimension": "不被允许的维度",
+  "sign_unlinked_message": "道路未链接",
+  "effect.via_romana.travellers_fatigue": "旅行疲劳",
+  "advancements.a_strand_type_game.title": "标准类型的游戏",
+  "advancements.a_strand_type_game.descr": "条条大道通罗马！（使用路牌链接世界）",
+  "sign_already_linked": "路牌已链接",
+  "via_romana.landing": "Via Romana（罗马大道）引入了一套快速旅行系统。玩家可以通过链接道路上的路牌，从而在它们之间进行即时传送",
+  "low_quality_message": "道路的质量不足",
+  "cancel_path_message": "道路已经取消",
+  "key.via_romana.interact_key": "Via Romana - 互动",
+  "item.via_romana.guide": "罗马修路指南",
+  "cannot_warp_when_recording": "无法在链接路牌时进行传送",
+  "config.via_romana.config_server": "via_romana_config",
+  "path_invalid_minimum": "道路太短",
+  "too_far_from_node_message": "距离道路过远",
+  "entity_not_allowed": "不允许载具",
+  "advancements.a_strand_type_game.descr.": "条条大道通罗马！（使用路牌链接世界）"
+}
