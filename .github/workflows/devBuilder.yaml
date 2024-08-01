@@ -6,9 +6,25 @@ on:
 
 env:
   BUILD: The Lying World
-  VERSION: ALPHA-v0.0
+  VERSION: ALPHA-v0.1
 
 jobs:
+  CloseDebug:
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Update probe settings
+        run: 
+          python .github/runners/debug.py
+          
   CreateCursePack:
     runs-on: ubuntu-latest
     if: github.repository == 'MakeshitTeam/The-Lying-World'

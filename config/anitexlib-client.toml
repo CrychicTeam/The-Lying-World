@@ -4,6 +4,4 @@
 	to_show_example = false
 	#Determine if particles must use advanced render system
 	use_advanced_particle_renderer = true
-	#Determine if particles can be visible in gui
-	to_render_particles_in_gui = true
 

@@ -761,6 +761,9 @@
 		#Range: > 1
 		Damage = 9
 
+	["Weapons and Tools OwO"."Gas Masks"]
+		"Gas masks" = ["spore:gas_mask"]
+
 ["Living Exoskeleton"]
 	#Default 1
 	#Range: > 0

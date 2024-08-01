@@ -1,0 +1,31 @@
+{
+	"name": "罗马修路指南",
+	"icon": "minecraft:oak_sign",
+	"sortnum": 2,
+	"priority": true,
+	"category": "via_romana:default",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "这本指南将教您如何构建道路，连接两个地点，并在它们之间进行传送。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:dirt_path",
+			"text": "想要构建有效的道路，您的道路中必须拥有一定数量的 $(thing)基础设施方块$()。 如果道路中有太多的自然方块，它将会是无效的。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:oak_sign",
+			"text": "你可以在任意距离上链接任意两个尚未链接的路牌，前提是它们间的道路是有效的。$(br2)想要链接路牌， $(thing)潜行并左击$() 你的起始点路牌, 然后 $(thing)潜行并左击$() 你的终点路牌"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "如果你的道路存在任何问题，将会有警告。如果你的道路是有效的，将能成功链接两个路牌。$(br2)要在两个已链接的路牌之间传送， $(thing)左击$() 一个已链接的路牌，你将会被传送到它所链接的路牌。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "想要破坏已经链接的路牌，请先解除它们的链接，或潜行并左击破坏你想要破坏的路牌。如果你使用的路牌是锦致装饰模组中的“路标”，你需要在一个栅栏上放置两个路标并使得它们都为有效的，才能破坏这一整个“路标”方块并解除链接。因为部分链接时你是无法破坏它的。"
+		}
+	]
+}

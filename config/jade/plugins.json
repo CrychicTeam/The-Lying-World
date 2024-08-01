@@ -64,6 +64,10 @@
   "supplementaries": {
     "hat_stand": true
   },
+  "fluiddrawerslegacy": {
+    "controller": true,
+    "fluiddrawer": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -71,5 +75,10 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "display.content": true,
+    "display.status": true
   }
 }
