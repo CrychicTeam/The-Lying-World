@@ -1,1 +1,117 @@
-[]
+[
+    {
+        "mod": "spore",
+        "gamestage": "spore",
+        "result": "allow"
+    },
+    {
+        "mod": "undead_revamp2",
+        "gamestage": "undead_revamp2",
+        "result": "allow"
+    },
+    {
+        "mob": "minecraft:enderman",
+        "gamestage": "ender",
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:zombie", 
+            "minecraft:zombie_horse", 
+            "minecraft:zombie_villager",
+            "minecraft:husk"
+        ],
+        "gamestage": "zombie_1",
+        "result": "allow"
+    },
+    {
+        "mob": "eidolon:zombie_brute",
+        "gamestage": "zombie_2",
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:skeleton",
+            "minecraft:skeleton_horse",
+            "minecraft:stray",
+            "occultism:possessed_skeleton",
+            "eidolon:wraith"
+        ],
+        "gamestage": "skeleton_1",
+        "result": "allow"
+    },
+    {
+        "mob": "eidolon:giant_skeleton",
+        "gamestage": "skeleton_2",
+        "result": "allow"
+    },
+    {
+        "mob": "minecraft:creeper",
+        "gamestage": "dead_1",
+        "result": "allow"
+    },
+    {
+        "mob": "embers:ancient_golem",
+        "minheight": -50,
+        "maxheight": 49,
+        "healthmultiply": 1.5,
+        "damagemultiply": 1.5,
+        "potion": [
+            "minecraft:regeneration,-1,0", 
+            "minecraft:resistance,-1,1"
+        ],
+        "nbt":{
+            "ActiveEffects":[
+                {
+                    "showParticles":false
+                }
+            ]
+        },
+        "armortoughnessmultiply": 2,
+        "attackspeedmultiply": 0.5,
+        "result": "allow"
+    },
+    {
+        "mob": "embers:ancient_golem",
+        "minheight": 50,
+        "maxheight": 79,
+        "healthmultiply": 1.2,
+        "damagemultiply": 1.2,
+        "potion": "minecraft:resistance,-1,0",
+        "attackspeedmultiply": 0.7,
+        "result": "allow"
+    },
+    {
+        "mob": "embers:ancient_golem",
+        "minheight": 80,
+        "healthmultiply": 0.8,
+        "damagemultiply": 0.8,
+        "attackspeedmultiply": 1.1,
+        "result": "allow"
+    },
+    {
+        "mod": [
+            "spore", 
+            "undead_revamp2"
+        ],
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "minecraft:zombie", 
+            "minecraft:zombie_horse", 
+            "minecraft:zombie_villager", 
+            "eidolon:zombie_brute",
+            "minecraft:husk",
+            "minecraft:skeleton",
+            "minecraft:skeleton_horse",
+            "minecraft:stray",
+            "occultism:possessed_skeleton",
+            "eidolon:wraith",
+            "eidolon:giant_skeleton",
+            "minecraft:enderman",
+            "minecraft:creeper"
+        ],
+        "result": "deny"
+    }
+]
