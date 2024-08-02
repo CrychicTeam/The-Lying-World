@@ -1,0 +1,7 @@
+#A list of entity stages in the format: "stage;modid:entity" or "stage;modid:entity;modid:dimension"
+#Example: "test_stage;minecraft:zombie" or "test_stage;minecraft:spider;minecraft:the_nether"
+entityStages = []
+#A list of tier stages in the format: "stage;tier" or "stage;tier;modid:dimension"
+#Example: "test_stage;2" or "test_stage;3;minecraft:the_nether"
+tierStages = []
+

@@ -29,9 +29,9 @@
 
 [mowziesmobs]
 	#Show Frostmaw
-	FrostmawBossBar = true
+	FrostmawBossBar = false
 	#Show Ferrous Wroughtnaut
-	FerrousWroughtnautBossBar = true
+	FerrousWroughtnautBossBar = false
 
 [meetyourfight]
 	#Show Bellringer
