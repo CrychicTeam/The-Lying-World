@@ -33,24 +33,24 @@
 		offset_z = 2.7500000000000044
 
 		[camera.offset.min]
-			#If x-offset is limited this is the minimum amount.
+			#When x-offset is limited this is the minimum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			min_offset_x = -3.0
-			#If y-offset is limited this is the minimum amount.
+			#When y-offset is limited this is the minimum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			min_offset_y = -1.0
-			#If z-offset is limited this is the minimum amount.
+			#When z-offset is limited this is the minimum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			min_offset_z = -3.0
 
 		[camera.offset.max]
-			#If x-offset is limited this is the maximum amount.
+			#When x-offset is limited this is the maximum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			max_offset_x = 3.0
-			#If y-offset is limited this is the maximum amount.
+			#When y-offset is limited this is the maximum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			max_offset_y = 1.5
-			#If z-offset is limited this is the maximum amount.
+			#When z-offset is limited this is the maximum amount.
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			max_offset_z = 5.0
 
@@ -100,13 +100,13 @@
 			[camera.offset.multiplier.fall_flying]
 				#x-offset multiplier for when using Elytra.
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				modifier_offset_x = 1.0
+				multiplier_offset_x = 1.0
 				#y-offset multiplier for when using Elytra.
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				modifier_offset_y = 1.0
+				multiplier_offset_y = 1.0
 				#z-offset multiplier for when using Elytra.
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				modifier_offset_z = 1.0
+				multiplier_offset_z = 1.0
 
 		[camera.offset.modifiers]
 
@@ -171,8 +171,13 @@
 	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
 	#Range: 0.0 ~ 90.0
 	hide_player_when_looking_up_angle = 0.0
-	#Whether to synchronize the x-rot of the player with mouse or controller inputs. This config option only applies when camera is decoupled.
-	sync_player_x_rot_with_inputs = false
+	#Whether the x-rot of the player should follow the camera x-rot. This config option only applies when camera is decoupled.
+	player_x_rot_follows_camera = false
+	#Whether the y-rot of the player should follow the camera y-rot. This config option only applies when camera is decoupled.
+	player_y_rot_follows_camera = false
+	#The maximum angle to which the player y-rot follows the camera y-rot. This config option only applies when player y-rot follows camera option is enabled.
+	#Range: 0.0 ~ 180.0
+	player_y_rot_follow_angle_limit = 90.0
 
 	[player.turning]
 		#Whether to turn the player when using an item. This config option only applies when camera is decoupled.
@@ -205,16 +210,16 @@
 	adaptive_crosshair_use_item_properties = ["minecraft:pull", "minecraft:throwing"]
 
 	[crosshair.visibility]
-		#Crosshair visibility for first_person.
+		#Crosshair visibility for first person.
 		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
 		first_person = "ALWAYS"
-		#Crosshair visibility for third_person_back.
+		#Crosshair visibility for third person back.
 		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
 		third_person_back = "NEVER"
-		#Crosshair visibility for third_person_front.
+		#Crosshair visibility for third person front.
 		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
 		third_person_front = "NEVER"
-		#Crosshair visibility for shoulder_surfing.
+		#Crosshair visibility for shoulder surfing.
 		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
 		shoulder_surfing = "ALWAYS"
 
@@ -230,10 +235,15 @@
 	use_custom_raytrace_distance = true
 
 	[object_picker.pick_origin]
-		#The origin where the entity pick starts.
+		#The origin where the entity pick starts when using the static crosshair.
 		#Allowed Values: PLAYER, CAMERA
 		entity_pick_origin = "PLAYER"
-		#The origin where the block pick starts.
+		#The origin where the block pick starts when using the static crosshair.
 		#Allowed Values: PLAYER, CAMERA
 		block_pick_origin = "PLAYER"
+
+	[object_picker.pick_vector]
+		#The vector direction of the raytrace when picking objects. This config option only applies when using the dynamic crosshair.
+		#Allowed Values: PLAYER, CAMERA
+		pick_vector = "CAMERA"
 

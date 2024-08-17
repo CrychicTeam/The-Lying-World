@@ -61,6 +61,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "cagedmobs": {
+    "cagedmobs_jade": true
+  },
   "supplementaries": {
     "hat_stand": true
   },

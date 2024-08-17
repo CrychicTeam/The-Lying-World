@@ -95,5 +95,5 @@ forgetCoefficient = 0.95
 forgetTime = 1728000
 #use sqrt
 #使用开根号计算
-isSqrt = false
+isSqrt = true
 

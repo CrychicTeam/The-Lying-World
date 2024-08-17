@@ -1,6 +1,6 @@
 {
 	// Generates all block states for all blocks in the registry.
-	"generate_all_known_states": true,
+	"generate_all_known_states": false,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
 	"state_swapper": [],
@@ -15,6 +15,15 @@
 		"eidolon:silver_ore": "oreganized:silver_ore",
 		"embers:deepslate_silver_ore": "oreganized:deepslate_silver_ore",
 		"occultism:silver_ore_deepslate": "oreganized:deepslate_silver_ore",
-		"eidolon:deep_silver_ore": "oreganized:deepslate_silver_ore"
+		"eidolon:deep_silver_ore": "oreganized:deepslate_silver_ore",
+
+		"palladium:lead_ore": "minecraft:stone",
+		"palladium:redstone_flux_crystal_geode": "minecraft:stone",
+
+		"palladium:deepslate_lead_ore": "minecraft:deepslate",
+		"palladium:deepslate_redstone_flux_crystal_geode": "minecraft:deepslate",
+
+		"palladium:titanium_ore": "minecraft:blackstone",
+		"palladium:vibranium_ore": "minecraft:blackstone",
 	}
 }
