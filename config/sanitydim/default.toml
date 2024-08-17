@@ -17,13 +17,13 @@
 		passive = 0.0
 		#Sanity gain per second during rainy weather or in water
 		#Range: -100.0 ~ 100.0
-		raining = -0.2
+		raining = -0.01
 		#Players' sanity will start getting affected with food levels at and below this threshold (in half-drumsticks)
 		#Range: 0 ~ 20
-		hunger_threshold = 8
+		hunger_threshold = 0
 		#Players with food levels at and below <hunger_threshold> gain this amount of sanity per second
 		#Range: -100.0 ~ 100.0
-		hungry = -0.2
+		hungry = -0.5
 		#Players will gain this amount of sanity per second for 5 seconds after looking at an enderman
 		#Range: -100.0 ~ 100.0
 		ender_man_anger = -5.0
@@ -171,7 +171,7 @@
 		sane_player_company = 0.05
 		#Being around players with sanity lower than 50% gives this amount of sanity per second
 		#Range: -100.0 ~ 100.0
-		insane_player_company = -0.12
+		insane_player_company = -0.1
 
 	#Entities configuration
 	[sanity.entity]

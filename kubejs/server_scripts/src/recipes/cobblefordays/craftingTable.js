@@ -1,4 +1,4 @@
-import { TireUpgrade } from "../../utils/tireUpgrade"
+import { TireUpgrade } from "../../utils/TireUpgrade"
 
 /**
  * 

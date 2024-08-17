@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "111"
+	group: ""
+	id: "3617BEC56B0E8143"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "065CEC5A68333890"
+		rewards: [{
+			auto: "enabled"
+			id: "0AAA9AA14378F24C"
+			ignore_reward_blocking: true
+			stage: "test"
+			team_reward: true
+			type: "gamestage"
+		}]
+		tasks: [{
+			dimension: "minecraft:overworld"
+			id: "19B9778C07881CC9"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "111"
+}
