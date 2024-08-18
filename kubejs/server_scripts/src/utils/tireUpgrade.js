@@ -4,7 +4,7 @@
  * @param {String[]} shape 
  * @param {$RecipesEventJS_} event 
  */
-export function TireUpgrade(event,shape) {
+function TireUpgrade(event,shape) {
     /**
      * @type {Map<number, string[]>}
      */

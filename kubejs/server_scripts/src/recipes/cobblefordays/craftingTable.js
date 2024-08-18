@@ -1,10 +1,10 @@
-import { TireUpgrade } from "../../utils/TireUpgrade"
+//import { TireUpgrade } from "../../utils/TireUpgrade"
 
 /**
  * 
  * @param {$RecipesEventJS_} event 
  */
-export function CraftingTableCobblefordays (event) {
+function CraftingTableCobblefordays (event) {
     const {kubejs} = event.recipes
     
     kubejs.shaped("cobblefordays:tier_1", [

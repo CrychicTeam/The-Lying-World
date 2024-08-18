@@ -2,7 +2,7 @@
  * 
  * @param {$RecipesEventJS_} event 
  */
-export function CraftingTableQuark (event) {
+function CraftingTableQuark (event) {
     const {kubejs} = event.recipes
 
     kubejs.shaped("8x quark:pipe", [
