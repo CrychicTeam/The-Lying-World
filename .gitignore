@@ -23,7 +23,7 @@ example.*
 /logs
 /local
 /modernfix
-/mods
+!/mods/*.jar
 /aes
 /.probe
 /.vscode
@@ -38,3 +38,4 @@ config/oculus.properties
 config/blockswap/known_states
 config/embeddium*
 config/xaerominimap*
+XaeroWaypoints*
