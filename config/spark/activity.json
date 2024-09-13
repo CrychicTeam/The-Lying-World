@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Cicelyon",
+      "uniqueId": "bc00582c-b62a-42cc-83ab-3035e6ae3e82"
+    },
+    "time": 1724660341735,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/xYWx1AyGFn"
+    }
+  }
+]
