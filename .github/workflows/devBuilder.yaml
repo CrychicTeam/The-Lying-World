@@ -11,7 +11,7 @@ env:
 jobs:
   CreateCursePack:
     runs-on: ubuntu-latest
-    if: github.repository == 'MakeshitTeam/The-Lying-World'
+    if: github.repository == 'CrychicTeam/The-Lying-World'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
