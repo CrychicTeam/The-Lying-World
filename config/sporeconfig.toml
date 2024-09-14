@@ -39,6 +39,7 @@
 		"Minimum amount of kills to start the evolution" = 1
 		#Default 7
 		"Minimum amount of kills to start the hyper evolution" = 5
+		"Infected Husk Evolutions" = ["spore:thorn"]
 
 	["Mob Evolutions and Infection System".Infections]
 		#Default true
@@ -292,7 +293,7 @@
 		"Should the hivemind send Vigils to raid?" = true
 		#Default true
 		"Should the hivemind build a wall of flesh around itself?" = true
-		#Default 1.0
+		#Default 3.0
 		#Range: 0.1 ~ 1.7976931348623157E308
 		"Sets The chance for a raid to start" = 1.0
 		"Sentient Mobs targeted by the hivemind" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
@@ -300,6 +301,8 @@
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Proto Damage Cap, set to 0 to disable" = 20.0
+		#Default true
+		"Should the hivemind spread madness?" = true
 
 	[Mobs.Howler]
 		#Default 32
@@ -346,6 +349,7 @@
 		#Default 100
 		#Range: > 1
 		"Sets the required biomass before it summons a calamity" = 100
+		"Mobs that are summoned for underground support" = ["spore:gazenbreacher", "spore:sieger"]
 
 	[Mobs.Scent]
 		#Default 4000
@@ -650,6 +654,50 @@
 		"Sets Scamper Age" = 600
 		#Default true
 		"Should Scampers summon Mounds on death?" = true
+
+	[Mobs.Howitzer]
+		#Default 500
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howitzer Max health" = 500.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howitzer Damage" = 15.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howitzer Armor" = 10.0
+		#Default 100
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howitzer Damage Cap , set to 0 to disable" = 100.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Howitzer Ranged Damage" = 10.0
+		#Default values: minecraft:speed|600|0, minecraft:strength|600|0, minecraft:resistance|600|1
+		"Gazenbreacher buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:resistance|600|1"]
+		#Default values: minecraft:blindness|600|0, spore:mycelium|600|1, minecraft:slowness|600|1
+		"Gazenbreacher debuffs" = ["minecraft:blindness|600|0", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
+		"Mobs that may spawn out of its dropped bombs" = ["spore:inf_vindicator", "spore:busser", "spore:brute", "spore:knight", "spore:griefer", "spore:leaper", "spore:inf_evoker", "spore:spitter", "spore:stalker", "spore:braiomil"]
+
+	[Mobs.Lacerator]
+		#Default 30
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Lacerator Max health" = 30.0
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Lacerator Damage" = 6.0
+		#Default 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Lacerator Armor" = 8.0
+
+	[Mobs.Vervathorn]
+		#Default 40
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Vervathorn Max health" = 40.0
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Vervathorn Damage" = 7.0
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Vervathorn Armor" = 10.0
 
 [Spawns]
 	#Default false
